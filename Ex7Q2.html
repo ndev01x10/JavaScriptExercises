@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Exercise 7 | Q2</title>
+    <script src="script.js" defer></script>
+
+    <style>
+        #myDIV {
+        width: 100%;
+        padding: 50px 0;
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 20px;
+        }
+        </style>
+
+        
+</head>
+
+<body>
+<!-- from W3schools
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show 
+-->
+<p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p>
+
+<button onclick="showElem()">Try it</button>
+
+<div id="myDIV">
+This is my DIV element.
+</div>
+
+<p><b>Note:</b> The element will not take up any space when the display property set to "none".</p>
+
+<!-- from W3schools -->
+
+    <h1>Ex7Q2</h1>
+        <div id="memEntryForm">
+            <table border=1>
+                <tr><td align="right">Member ID:</td><td><input type="text" id="memId" value=""/></td></tr>
+                <tr><td align="right">Member Name:</td><td><input type="text" id="memName"/></td></tr>            
+                <tr><td align="right">DOB (mm/dd/yy):</td><td><input type="text" id="memDob"/></td></tr>
+                <tr><td align="right">Address:</td><td><input type="text" id="memAddr"/></td></tr>
+                <tr><td align="right">Mobile Number:</td><td><input type="text" id="memMobile"/></td></tr>
+                <tr>
+         </table>
+        </div>
+        <div>
+        <br>
+            <button id="addMemBtn" onclick="addNewMember()">Add Member</button>
+            <button id="listMemBtn" onclick="listMembers()">List Member</button>
+            <button onclick="displayMemRecFunc()">Display Members' Records</button>
+            <button onclick="showMemEntryForm()">Show Entry Form</button>
+        </div>        
+        <p id="target"></p>
+
+</body>
+</html>
